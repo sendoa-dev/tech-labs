@@ -1,0 +1,28 @@
+---
+const { t } = Astro.props
+---
+
+<section id="hero" class="bg-black/50 text-white py-12 px-4">
+  <div class="max-w-4xl mx-auto relative text-center">
+    <!-- Banner image -->
+    <div class="w-full h-48 md:h-64 overflow-hidden rounded-xl shadow">
+      <img src="https://media.licdn.com/dms/image/v2/D4D16AQFqyZcR6KmZoQ/profile-displaybackgroundimage-shrink_350_1400/B4DZYZQHm1HIAc-/0/1744180378964?e=1756944000&v=beta&t=AjfrGpNmO4_IcskCfm88yTHQdsbxu4y3oKjjD1vRTYY" alt="Blueprint or tech background" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Avatar -->
+    <div class="w-24 h-24 rounded-full border-4 border-white shadow-lg mx-auto -mt-12 bg-white overflow-hidden relative z-10">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQEsSz-s58rTsw/profile-displayphoto-shrink_800_800/B4DZYXUq7YHIAg-/0/1744148017462?e=1756944000&v=beta&t=Y5h5i6SYot-GM376v7A5C0gQXYYnF82PdS5BGLe1dFk" alt="Sendoa Barciela" class="object-cover w-full h-full" />
+    </div>
+
+    <!-- Info -->
+    <div class="mt-4">
+      <h1 class="text-2xl font-semibold">{t.heading}</h1>
+      <p>{t.subheading}</p>
+
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="https://linkedin.com/in/sendoabll" class="px-6 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition" target="_blank">{t.cta.linkedin}</a>
+        <a href="https://github.com/sendoabll" class="px-6 py-2 rounded-md border border-gray-400 text-white font-medium hover:bg-gray-100 hover:text-black transition" target="_blank">{t.cta.github}</a>
+      </div>
+    </div>
+  </div>
+</section>

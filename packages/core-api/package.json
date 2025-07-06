@@ -1,0 +1,31 @@
+{
+  "name": "@tech-labs/core-api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/api.html",
+    "build": "vite build",
+    "build:live": "vite build --watch --mode staging",
+    "test:unit": "vitest",
+    "lint": "eslint . --no-fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/config-vitest": "*",
+    "@tech-labs/core-utils": "*",
+    "@capacitor/core": "^6.1.2",
+    "axios": "1.9.0",
+    "vite": "*",
+    "vitest": "*",
+    "vite-plugin-eslint": "*"
+  },
+  "exports": {
+    ".": "./dist/core-api.js"
+  },
+  "files": [
+    "dist/*"
+  ]
+}

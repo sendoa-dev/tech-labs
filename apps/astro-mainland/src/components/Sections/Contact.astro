@@ -1,0 +1,13 @@
+---
+const { t } = Astro.props
+---
+
+<section id="contact" class="bg-black/50 text-gray-100 py-24">
+  <div class="max-w-xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-4">{t.heading}</h2>
+    <p class="text-gray-400 mb-6">{t.body}</p>
+    <a href="https://www.linkedin.com/in/sendoabll" target="_blank" class="inline-block px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">
+      {t.cta}
+    </a>
+  </div>
+</section>

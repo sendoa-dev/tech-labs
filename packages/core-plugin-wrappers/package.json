@@ -1,0 +1,17 @@
+{
+  "name": "@tech-labs/core-plugin-wrappers",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "vite-plugin-eslint.js"
+  ],
+  "exports": {
+    "./vite-plugin-eslint": "./src/vite-plugin-eslint.js",
+    "./@vitejs/plugin-vue": "./src/@vitejs/plugin-vue.js"
+  },
+  "dependencies": {
+    "vite-plugin-eslint": "*",
+    "@vitejs/plugin-vue": "*"
+  }
+}

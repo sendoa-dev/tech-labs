@@ -1,0 +1,12 @@
+<mj-section>
+  <mj-column>
+    <mj-divider border-width="1px" border-color="#ECEDEF"></mj-divider>
+    <mj-text align="left" css-class="text-dark text-lighter text-10">
+      Brand Name
+    </mj-text>
+
+    <mj-text align="left" color="#8D8D8D" font-size="10px">
+      {{$t(LAYOUT_FOOTER_EMAIL_FROM)}}
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,36 @@
+---
+import { translations } from '../../modules/i18n/index'
+import { AVAILABLE_LANGUAGES, DEFAULT_LANG } from '../../modules/i18n/config'
+
+import Hero from '../../components/Sections/Hero.astro'
+import About from '../../components/Sections/About.astro'
+import HowIWork from '../../components/Sections/HowIWork.astro'
+import MonolithIntro from '../../components/Sections/MonolithIntro.astro'
+import Showcase from '../../components/Sections/Showcase.astro'
+import Stack from '../../components/Sections/Stack.astro'
+import Contact from '../../components/Sections/Contact.astro'
+import StickyHeader from '../../components/App/StickyHeader.astro'
+import LanguageLinks from '../../components/App/LanguageLinks.astro'
+import IndexLayout from '../../layouts/IndexLayout.astro'
+
+export function getStaticPaths() {
+  return Object.keys(AVAILABLE_LANGUAGES).map(lang => ({
+    params: { lang }
+  }))
+}
+
+const { lang } = Astro.params
+const t = translations[lang] || translations[DEFAULT_LANG]
+---
+<IndexLayout lang={lang}>
+  <StickyHeader lang={lang} />
+  <LanguageLinks class="my-4" lang={lang} />
+
+  <Hero t={t.hero} />
+  <About t={t.about} />
+  <HowIWork t={t.how_i_work} />
+  <MonolithIntro t={t.monolith_intro} />
+  <Showcase t={t.showcase} />
+  <Stack t={t.stack} />
+  <Contact t={t.contact} />
+</IndexLayout>

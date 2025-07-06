@@ -1,0 +1,51 @@
+.core-button {
+  @apply relative overflow-hidden cursor-pointer rounded-full;
+}
+
+.core-button--full {
+  @apply w-full px-4 py-3 leading-6 text-base lg:px-8;
+}
+
+.core-button--md {
+  @apply w-auto min-w-36 px-4 py-2 leading-6 text-base lg:w-48 lg:px-6;
+}
+
+.core-button--fit {
+  @apply w-fit px-4 py-2 leading-6 text-base;
+}
+
+.core-button--slim {
+  @apply w-fit py-2 leading-3 text-xs;
+}
+
+.core-button--primary {
+  @apply bg-black text-white hover:bg-black/25 focus:bg-black/25 focus:outline-black active:bg-black/50;
+}
+
+.core-button--primary.core-button--disabled {
+  @apply bg-black/95 text-white cursor-not-allowed;
+}
+
+.core-button--primary.core-button--outline {
+  @apply bg-transparent border border-black text-black hover:border-black/25 hover:text-black/25 focus:border-black/25 focus:text-black/25 active:border-black/50 active:text-black/50;
+}
+
+.core-button--primary.core-button--outline.core-button--disabled {
+  @apply border border-black/95 text-black/95 cursor-not-allowed;
+}
+
+.core-button--secondary {
+  @apply bg-white border border-black text-black hover:bg-white focus:bg-white focus:outline-black active:bg-white;
+}
+
+.core-button--secondary.core-button--disabled {
+  @apply bg-white text-black cursor-not-allowed;
+}
+
+.core-button--secondary.core-button--outline {
+  @apply bg-transparent border border-black text-white hover:border-white hover:text-white focus:border-black focus:text-white active:border-black active:text-white;
+}
+
+.core-button--secondary.core-button--outline.core-button--disabled {
+  @apply opacity-25 border border-black text-white cursor-not-allowed;
+}

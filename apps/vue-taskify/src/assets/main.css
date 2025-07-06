@@ -1,0 +1,13 @@
+@import '@tech-labs/core-tailwindcss';
+
+@import '@tech-labs/core-vue-components/style.css';
+@import 'primeicons/primeicons.css';
+
+@layer base {
+  html {
+    font-size: 16px;
+
+    /* @screen xl { font-size: 18px; } */
+    /* @screen xxl { font-size: 20px; } */
+  }
+}

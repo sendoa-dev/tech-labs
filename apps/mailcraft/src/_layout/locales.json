@@ -1,0 +1,10 @@
+{
+  "en": {
+    "LAYOUT_MESSAGE_NOT_YOURS": "If you believe this message is not for you, ignore it or get in ",
+    "LAYOUT_CONTACT_WITH_US": "contact with us"
+  },
+  "es": {
+    "LAYOUT_MESSAGE_NOT_YOURS": "Si crees que este mensaje no es para ti, ignóralo o ponte en ",
+    "LAYOUT_CONTACT_WITH_US": "contacto con nosotros"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "appName": "Habitly",
+  "appId": "com.habilty.app",
+  "webDir": "dist",
+  "plugins": {
+    "CapacitorCookies": {
+      "enabled": true
+    },
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

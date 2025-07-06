@@ -1,0 +1,33 @@
+{
+  "name": "@tech-labs/core-composables",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/composables.html",
+    "build": "vite build",
+    "build:live": "vite build --watch --mode staging",
+    "test:unit": "vitest",
+    "lint": "eslint . --no-fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "*",
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/core-utils": "*",
+    "@tech-labs/config-vitest": "*",
+    "@vitejs/plugin-vue": "*",
+    "vue": "*",
+    "vite": "*",
+    "vitest": "*",
+    "vite-plugin-eslint": "*"
+  },
+  "exports": {
+    ".": "./dist/core-composables.js"
+  },
+  "files": [
+    "dist/*"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "frontend",
+  "private": true,
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "initialize": "turbo run build && npx playwright install",
+    "analyze": "turbo run analyze",
+    "purge": "rm -rf package-lock.json node_modules && find . -type d \\( -name node_modules -o -name .turbo -o -name dist \\) -prune -exec rm -rf {} + && npm install && npm run build",
+    "apps:release": "turbo run apps:release --filter=./apps/hauss",
+    "apps:qa_release": "turbo run apps:qa_release --filter=./apps/hauss",
+    "apps:generate": "turbo run apps:generate --filter=./apps/hauss",
+    "build": "turbo run build",
+    "build:live": "turbo run build:live --filter=./packages/* -- --mode staging",
+    "dev": "turbo run dev --filter=./apps/*",
+    "dev:staging": "turbo run dev --filter=./apps/* -- --mode staging",
+    "dev:pre": "turbo run dev --filter=./apps/* -- --mode pre",
+    "dev:prod": "turbo run dev --filter=./apps/* -- --mode prod",
+    "test:unit": "turbo run test:unit -- --passWithNoTests=true",
+    "test:e2e": "turbo run test:e2e",
+    "test:e2e:codegen": "turbo run test:e2e:codegen",
+    "lint": "turbo run lint",
+    "serve": "turbo run serve --filter=./apps/*",
+    "storybook": "turbo run storybook --filter=./apps/storybook"
+  },
+  "gitHooks": {
+    "pre-commit": "npm run lint",
+    "pre-push": "npm run build && npm run test:unit"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "override": {
+    "@tailwindcss/vite": "^4.1.10",
+    "@vitejs/plugin-vue": "5.2.3",
+    "@vue/test-utils": "2.4.6",
+    "astro": "^5.10.1",
+    "imask": "7.6.1",
+    "vite": "5.2.10",
+    "vite-plugin-eslint": "1.8.1",
+    "vite-svg-loader": "5.1.0",
+    "vitest": "2.0.5",
+    "vue": "3.5.8",
+    "vue-router": "4.2.5",
+    "typescript": "^5.7.3",
+    "tsx": "^4.7.0"
+  },
+  "dependencies": {
+    "depcheck": "^1.4.7",
+    "turbo": "^2.5.1",
+    "vite-bundle-visualizer": "1.2.1",
+    "yorkie": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.40.0"
+  }
+}

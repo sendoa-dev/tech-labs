@@ -1,0 +1,31 @@
+{
+  "name": "@tech-labs/xuidocs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "bundle": "storybook build -o dist/"
+  },
+  "dependencies": {
+    "@tech-labs/core-vue-components": "*",
+    "@tech-labs/core-composables": "*",
+    "@tech-labs/core-utils": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-a11y": "^8.6.12",
+    "@storybook/addon-docs": "^8.6.12",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-links": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/manager-api": "^8.6.12",
+    "@storybook/test": "^8.6.12",
+    "@storybook/theming": "^8.6.12",
+    "@storybook/vue3": "^8.6.12",
+    "@storybook/vue3-vite": "^8.6.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "^8.6.12",
+    "storybook-reset-url-args": "^1.1.3"
+  }
+}

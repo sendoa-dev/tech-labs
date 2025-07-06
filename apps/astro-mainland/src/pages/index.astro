@@ -1,0 +1,75 @@
+---
+// SplashScreen UX 2.0 — Astro static friendly
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tech Labs</title>
+
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #0a0a1e, #000a28);
+        font-family: system-ui, sans-serif;
+        color: white;
+        overflow: hidden;
+      }
+
+      .splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        opacity: 0;
+        transform: scale(0.96);
+        animation: fadeInUp 0.5s ease-out forwards;
+      }
+
+      .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+
+      .tagline {
+        font-size: 0.875rem;
+        color: #cbd5e1;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="splash" role="status" aria-live="polite">
+      <div class="logo">Tech Labs</div>
+      <div class="tagline">A modular frontend architecture playground built with Astro, Vue & React.</div>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        const lang = navigator.language.startsWith('es') ? 'es' : 'en';
+        window.location.replace('/' + lang + '/');
+      }, 2000);
+    </script>
+  </body>
+</html>

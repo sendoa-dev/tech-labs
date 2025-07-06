@@ -1,0 +1,19 @@
+---
+const { lang = 'en', class: extraClass = '' } = Astro.props
+
+const languages = {
+  en: { label: 'EN', path: '/en/' },
+  es: { label: 'ES', path: '/es/' }
+}
+
+const currentLang = lang === 'es' ? 'es' : 'en'
+const otherLang = lang === 'es' ? 'en' : 'es'
+---
+
+<a
+  href={languages[otherLang].path}
+  hreflang={otherLang}
+  class={`absolute right-0 mx-6 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-700 hover:bg-gray-600 text-white transition ${extraClass}`}
+>
+  🌐 {languages[currentLang].label}
+</a>

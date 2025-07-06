@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+
+const defaultBubbleClasses = 'absolute rounded-full opacity-80 mix-blend-hard-light'
+
+const bubbles = [
+  `${defaultBubbleClasses} top-[20%] left-[30%] w-[80vw] h-[80vw] bg-[radial-gradient(circle,_rgba(18,113,255,0.8)_0%,_rgba(18,113,255,0)_50%)]`,
+  `${defaultBubbleClasses} top-[50%] left-[50%] w-[80vw] h-[80vw] bg-[radial-gradient(circle,_rgba(221,74,255,0.8)_0%,_rgba(221,74,255,0)_50%)]`,
+  `${defaultBubbleClasses} top-[70%] left-[20%] w-[80vw] h-[80vw] bg-[radial-gradient(circle,_rgba(100,220,255,0.8)_0%,_rgba(100,220,255,0)_50%)]`,
+  `${defaultBubbleClasses} top-[40%] left-[70%] w-[80vw] h-[80vw] bg-[radial-gradient(circle,_rgba(200,50,50,0.7)_0%,_rgba(200,50,50,0)_50%)]`,
+  `${defaultBubbleClasses} top-[60%] left-[40%] w-[160vw] h-[160vw] bg-[radial-gradient(circle,_rgba(180,180,50,0.8)_0%,_rgba(180,180,50,0)_50%)]`,
+]
+
+const { lang } = Astro.props
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tech Labs</title>
+  </head>
+
+  <body class="min-h-screen flex flex-col text-white font-sans prose">
+    <!-- Gradient background -->
+    <div class="fixed inset-0 z-[-10] overflow-hidden bg-gradient-to-br from-[#0a0a1e] to-[#000a28]">
+      <div class="w-full h-full blur-[40px]">
+        {bubbles.map(bubble => (
+          <div class={bubble}></div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="relative z-10">
+      <slot />
+    </div>
+
+    <script type="module" src="/src/modules/aos/index.js" />
+    <script type="module" src="/src/modules/sticky-header/index.js" />
+  </body>
+</html>

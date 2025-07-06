@@ -1,0 +1,44 @@
+---
+const { t } = Astro.props
+---
+
+<section id="stack" class="bg-gray-950/50 text-gray-100 py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center">{t.heading}</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+        <ul class="space-y-6">
+          {t.frameworks.map(framework => (
+            <li>
+              <p class="font-medium">{framework.name}</p>
+              <div class="flex gap-2 mt-1">
+                {[...Array(5)].map((_, i) => (
+                  <div class={`h-[2px] rounded-full w-10 ${i < framework.level ? 'bg-blue-500' : 'bg-gray-700'}`}></div>
+                ))}
+              </div>
+              <p class="text-gray-400 text-sm mt-1">{framework.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Tooling</h3>
+        <ul class="space-y-6">
+          {t.tooling.map(tool => (
+            <li>
+              <p class="font-medium">{tool.name}</p>
+              <div class="flex gap-2 mt-1">
+                {[...Array(5)].map((_, i) => (
+                  <div class={`h-[2px] rounded-full w-10 ${i < tool.level ? 'bg-blue-500' : 'bg-gray-700'}`}></div>
+                ))}
+              </div>
+              <p class="text-gray-400 text-sm mt-1">{tool.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

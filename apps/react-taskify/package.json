@@ -1,0 +1,32 @@
+{
+  "name": "@tech-labs/react-taskify",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/react-taskify.html",
+    "dev": "vite --port 5174",
+    "build": "vite build",
+    "preview": "vite build --mode production && vite preview",
+    "lint": "eslint . --no-fix"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "*",
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/core-api": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/core-vue-components": "*",
+    "@tech-labs/core-composables": "*",
+    "@tech-labs/core-utils": "*",
+    "@tech-labs/static-assets": "*",
+    "axios": "*",
+    "vue": "*",
+    "vite": "*",
+    "vite-svg-loader": "*",
+    "@vitejs/plugin-vue": "*",
+    "vite-plugin-eslint": "*",
+    "vue-i18n": "*",
+    "vue-router": "*"
+  }
+}

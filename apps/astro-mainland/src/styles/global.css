@@ -1,0 +1,4 @@
+@import '@tech-labs/core-tailwindcss';
+
+@import '@tech-labs/core-vue-components/style.css';
+@import 'primeicons/primeicons.css';
