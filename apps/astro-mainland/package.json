@@ -1,0 +1,24 @@
+{
+  "name": "astro-mainland",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "*",
+    "@tech-labs/core-api": "*",
+    "@tech-labs/core-composables": "*",
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/core-utils": "*",
+    "@tech-labs/core-vue-components": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/static-assets": "*",
+    "aos": "^2.3.4",
+    "astro": "*"
+  }
+}

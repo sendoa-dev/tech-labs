@@ -1,0 +1,82 @@
+<mj-style inline="inline">
+  .text-10 > * { font-size: 10px !important; }
+  .text-13 > * { font-size: 13px !important; }
+
+  .text-bolder { font-weight: 900 !important; }
+  .text-lighter { font-weight: 100 !important; }
+
+  .text-blue-gray { color: #737B8C !important; }
+  .text-yellow-500 { color: #FFAE00 !important; }
+  .text-dark { color: #25272D !important; }
+
+  .text-logo > * { color: #25272D !important; font-size: 16px !important; }
+
+  .background-yellow-200 { background: #FDFAF2 !important; }
+</mj-style>
+
+<mj-attributes>
+  <mj-text font-family="Arial, Helvetica" />
+
+  <mj-class
+    name="text-title"
+    font-size="24px"
+    color="#25272D"
+    font-style="normal"
+    font-weight="700"
+    line-height="32px"
+    padding="6px 25px 12px"
+  />
+  <mj-class
+    name="text-phase-title"
+    font-family="Georgia, 'Trebuchet MS'"
+    font-size="22px"
+    color="#25272D"
+    font-style="normal"
+    font-weight="400"
+    line-height="24px"
+  />
+  <mj-class
+    name="text-subtitle"
+    font-size="18px"
+    color="#25272D"
+    font-style="normal"
+    font-weight="400"
+    line-height="24px"
+    padding="0 25px 12px"
+  />
+  <mj-class
+    name="text-content"
+    font-size="14px"
+    color="#25272D"
+    font-style="normal"
+    font-weight="400"
+    line-height="20px"
+    padding="6px 25px"
+  />
+  <mj-class
+    name="text-content-bold"
+    font-size="14px"
+    color="#25272D"
+    font-style="normal"
+    font-weight="700"
+    line-height="20px"
+    padding="6px 25px"
+  />
+
+  <mj-class
+    name="buttonblack"
+    display="flex"
+    background-color="#25272D"
+    border-radius="100px"
+    inner-padding="12px 40px"
+  />
+  <mj-class
+    name="buttonblack-outline"
+    color="#25272D"
+    display="flex"
+    background-color="#FFFFFF"
+    border-radius="100px"
+    border="1px solid #25272D"
+    inner-padding="12px 40px"
+  />
+</mj-attributes>

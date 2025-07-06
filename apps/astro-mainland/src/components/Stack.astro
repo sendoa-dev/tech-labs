@@ -1,0 +1,57 @@
+---
+const frameworks = [
+  { name: 'Vue / Nuxt', level: 5, description: 'My go-to framework. Used across design systems, SPAs, and PWA apps.'},
+  { name: 'React', level: 4, description: 'Comfortable. Used in production. Prefer Vue for maintainability.'},
+  { name: 'Astro', level: 4, description: 'Love its simplicity and content-focus. Used in this site.'}
+];
+
+const tooling = [
+  { name: 'Vite', level: 5, description: 'Default choice for all projects. Fast and flexible.'},
+  { name: 'Turborepo', level: 5, description: 'Core to my monorepo architecture.'},
+  { name: 'ESLint', level: 5, description: 'Customized config across projects.'},
+  { name: 'Vitest', level: 4, description: 'Clean DX. Works well with Vite.'},
+  { name: 'Playwright', level: 4, description: 'Used for E2E testing in internal tools.'}
+];
+---
+
+<section data-aos="fade-in" id="stack" class="bg-gray-950/50 text-gray-100 py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center">My Stack Evaluation</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+        <ul class="space-y-6">
+          {frameworks.map(framework => (
+            <li>
+              <p class="font-medium">{framework.name}</p>
+              <div class="flex gap-2 mt-1">
+                {[...Array(5)].map((_, i) => (
+                  <div class={`h-[2px] rounded-full w-10 ${i < framework.level ? 'bg-blue-500' : 'bg-gray-700'}`}></div>
+                ))}
+              </div>
+              <p class="text-gray-400 text-sm mt-1">{framework.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Tooling</h3>
+        <ul class="space-y-6">
+          {tooling.map(tool => (
+            <li>
+              <p class="font-medium">{tool.name}</p>
+              <div class="flex gap-2 mt-1">
+                {[...Array(5)].map((_, i) => (
+                  <div class={`h-[2px] rounded-full w-10 ${i < tool.level ? 'bg-blue-500' : 'bg-gray-700'}`}></div>
+                ))}
+              </div>
+              <p class="text-gray-400 text-sm mt-1">{tool.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

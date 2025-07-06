@@ -1,0 +1,82 @@
+# Apps
+desc "Deploys Apps @ Production track"
+lane :apps_release do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android release environment:#{options[:environment] || 'production'}"
+  end
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Deploys Apps @ Beta track"
+lane :apps_qa_release do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android qa_release environment:#{options[:environment] || 'production'}"
+  end
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios qa_release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Generates Apps"
+lane :apps_generate do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android generate_apk environment:#{options[:environment] || 'production'}"
+  end
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios generate_ipa environment:#{options[:environment] || 'production'}"
+  end
+end
+
+# Android app
+desc "Deploys on Google Play Console @ Production track"
+lane :android_release do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Deploys on Google Play Console @ Beta track"
+lane :android_qa_release do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android qa_release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Generates .apk file"
+lane :android_generate_apk do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android generate_apk environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Generates .aab file"
+lane :android_generate_aab do |options|
+  Dir.chdir("../android") do
+    sh "fastlane android generate_aab environment:#{options[:environment] || 'production'}"
+  end
+end
+
+
+# iOS app
+desc "Deploys on App Store Connect @ Testflight"
+lane :ios_qa_release do |options|
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios qa_release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Deploys on App Store Connect @ Production"
+lane :ios_release do |options|
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios release environment:#{options[:environment] || 'production'}"
+  end
+end
+
+desc "Generates .ipa file"
+lane :ios_generate_ipa do |options|
+  Dir.chdir("../ios/App") do
+    sh "fastlane ios generate_ipa environment:#{options[:environment] || 'production'}"
+  end
+end

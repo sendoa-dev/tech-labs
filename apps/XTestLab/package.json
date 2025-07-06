@@ -1,0 +1,19 @@
+{
+  "name": "@tech-labs/xtestlab",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:e2e": "npx playwright test",
+    "test:e2e:codegen": "npx playwright codegen",
+    "test:e2e:headed": "npx playwright test --headed",
+    "test:certification": "npx playwright test --project=certification",
+    "codegen:certification": "npx playwright codegen http://localhost:5173"
+  },
+  "dependencies": {
+    "@tech-labs/eslint-config-linter": "*",
+    "@playwright/test": "^1.41.2",
+    "dotenv": "^16.4.5",
+    "@vitejs/plugin-vue": "^5.0.4"
+  }
+}

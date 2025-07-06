@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "globalDependencies": [
+    "package.json"
+  ],
+  "tasks": {
+    "analyze": {},
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "build:live": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "serve": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:unit": {},
+    "test:e2e": {},
+    "test:e2e:codegen": {},
+    "lint": {},
+    "storybook": {}
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@tech-labs/core-vue-components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/components.html",
+    "build": "vite build",
+    "build:live": "vite build --watch --mode staging",
+    "test:unit": "vitest",
+    "lint": "eslint . --no-fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/config-components": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/core-composables": "*",
+    "@tech-labs/core-utils": "*",
+    "@tech-labs/static-assets": "*",
+    "@tech-labs/config-vitest": "*",
+    "@popperjs/core": "^2.11.8",
+    "@vitejs/plugin-vue": "*",
+    "@vue/test-utils": "*",
+    "ant-design-vue": "^4.2.6",
+    "cropperjs": "^1.6.2",
+    "imask": "*",
+    "floating-vue": "^5.2.2",
+    "v-calendar": "^3.1.2",
+    "vue-content-loader": "^2.0.1",
+    "vue-multiselect": "^3.2.0",
+    "vue": "*",
+    "vue-i18n": "*",
+    "vite": "*",
+    "vitest": "*",
+    "vite-svg-loader": "*",
+    "vite-plugin-eslint": "*"
+  },
+  "exports": {
+    ".": "./dist/core-vue-components.js",
+    "./style.css": "./dist/core-vue-components.css"
+  },
+  "files": [
+    "dist/*"
+  ]
+}

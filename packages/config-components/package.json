@@ -1,0 +1,32 @@
+{
+  "name": "@tech-labs/config-components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/components.html",
+    "build": "../../node_modules/.bin/tsc && npm run copy:styles",
+    "build:live": "../../node_modules/.bin/tsc && npm run copy:styles",
+    "copy:styles": "rsync -av --include='*/' --include='*.css' --exclude='*' src/ dist/",
+    "lint": "eslint . --no-fix"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "vite-plugin-eslint": "*"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./styles/*": {
+      "default": "./dist/styles/*"
+    }
+  },
+  "files": [
+    "dist/*"
+  ]
+}

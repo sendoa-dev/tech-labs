@@ -1,0 +1,37 @@
+{
+  "name": "@tech-labs/core-utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "vite-bundle-visualizer --mode production -o logs/utils.html",
+    "build": "vite build",
+    "build:live": "vite build --watch --mode staging",
+    "test:unit": "vitest",
+    "lint": "eslint . --no-fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/eslint-config-linter": "*",
+    "@tech-labs/core-tailwindcss": "*",
+    "@tech-labs/config-vitest": "*",
+    "country-flag-icons": "^1.5.18",
+    "crypto-js": "4.2.0",
+    "dayjs": "^1.11.13",
+    "google-libphonenumber": "^3.2.40",
+    "iso-3166-1": "^2.1.1",
+    "iso-639-1": "^3.1.5",
+    "imask": "*",
+    "vue": "*",
+    "vitest": "*",
+    "vite": "*",
+    "vite-plugin-eslint": "*"
+  },
+  "exports": {
+    ".": "./dist/core-utils.js"
+  },
+  "files": [
+    "dist/*"
+  ]
+}

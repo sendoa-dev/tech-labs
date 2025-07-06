@@ -1,0 +1,26 @@
+{
+  "name": "@tech-labs/core-api-auth",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@tech-labs/eslint-config-linter": "*",
+    "bcrypt": "^6.0.0",
+    "fastify": "^4.24.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}

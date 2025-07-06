@@ -1,0 +1,173 @@
+<mjml>
+  <mj-head>
+    <mj-include path="src/_layout/Head/CommonClasses.mjml" />
+  </mj-head>
+
+  <mj-body background-color="white">
+    <mj-include path="src/_layout/Body/Header.mjml" />
+
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="text-title">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_TITLE_1)}}
+          <span class="text-blue-gray"
+            >{{$t(BRAND_NAME_ENDORSEMENT_SENT_TITLE_NAME)}}</span
+          >
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_TITLE_2)}}<span class="text-yellow-500"
+            >.</span
+          >
+        </mj-text>
+
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_1)}}
+        </mj-text>
+
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_2)}}
+        </mj-text>
+
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_3)}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFAE00" padding="1px" border-radius="10px">
+      <mj-column background-color="#FDFAF2" border-radius="10px">
+        <mj-text mj-class="text-content-bold">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_TITLE)}}
+        </mj-text>
+
+        <mj-text
+          mj-class="text-content"
+          padding-left="40px"
+          padding-bottom="2px"
+        >
+          • {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_BODY_1)}}
+        </mj-text>
+
+        <mj-text
+          mj-class="text-content"
+          padding-left="40px"
+          padding-bottom="10px"
+        >
+          • {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_BODY_2)}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section> </mj-section>
+
+    <mj-section background-color="#ECEDEF" padding="1px" border-radius="10px">
+      <mj-column background-color="#FFFFFF" border-radius="10px">
+        <mj-text mj-class="text-content-bold" padding-bottom="4px">
+          <img
+            width="24px"
+            height="24px"
+            style="vertical-align: bottom"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5IDhINUMzLjg5NTQzIDggMyA4Ljg5NTQzIDMgMTBWMThDMyAxOS4xMDQ2IDMuODk1NDMgMjAgNSAyMEgxOUMyMC4xMDQ2IDIwIDIxIDE5LjEwNDYgMjEgMThWMTBDMjEgOC44OTU0MyAyMC4xMDQ2IDggMTkgOFoiIHN0cm9rZT0iIzI1MjcyRCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTIgMTNWMTUiIHN0cm9rZT0iIzI1MjcyRCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMyAxNEgyMSIgc3Ryb2tlPSIjMjUyNzJEIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNSA4VjZDMTUgNS40NDc3MiAxNC41NTIzIDUgMTQgNUgxMEM5LjQ0NzcyIDUgOSA1LjQ0NzcyIDkgNlY4IiBzdHJva2U9IiMyNTI3MkQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=="
+          />
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_COMPANY)}}
+        </mj-text>
+        <mj-text mj-class="text-content" padding="0px 55px 12px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_DATES)}}
+        </mj-text>
+
+        <mj-table padding="0px 55px 12px">
+          <tr style="white-space: nowrap">
+            <td style="padding-right: 10px">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_ROLE_TITLE)}}
+            </td>
+            <td style="font-weight: 700">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_ROLE_VALUE)}}
+            </td>
+          </tr>
+          <tr style="white-space: nowrap">
+            <td style="padding-right: 10px">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_SENIORITY_TITLE)}}
+            </td>
+            <td style="font-weight: 700">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_SENIORITY_VALUE)}}
+            </td>
+          </tr>
+          <tr style="white-space: nowrap">
+            <td style="padding-right: 10px">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_LOCATION_TITLE)}}
+            </td>
+            <td style="font-weight: 700">
+              {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_LOCATION_VALUE)}}
+            </td>
+          </tr>
+        </mj-table>
+
+        <mj-text mj-class="text-content" padding="0px 55px 12px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_DESCRIPTION_VALUE)}}
+        </mj-text>
+
+        <mj-text mj-class="text-content-bold" padding-left="55px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_EXPERTISE_TITLE)}}
+        </mj-text>
+        <mj-text mj-class="text-content" padding="0px 55px 12px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_EXPERTISE_VALUE)}}
+        </mj-text>
+
+        <mj-text mj-class="text-content-bold" padding-left="55px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_JURISDICTIONS_TITLE)}}
+        </mj-text>
+        <mj-text mj-class="text-content" padding="0px 55px 12px">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BANNER_CARD_JURISDICTIONS_VALUE)}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_4)}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-button
+          href="{{$t(BRAND_NAME_ENDORSEMENT_SENT_CONFIRM_URL)}}"
+          mj-class="buttonblack"
+          font-size="16px"
+          padding="0"
+          width="90%"
+        >
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_CONFIRM)}}
+        </mj-button>
+      </mj-column>
+
+      <mj-column>
+        <mj-button
+          href="{{$t(BRAND_NAME_ENDORSEMENT_SENT_CANT_CONFIRM_URL)}}"
+          mj-class="buttonblack-outline"
+          font-size="16px"
+          padding="0"
+          width="90%"
+        >
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_CANT_CONFIRM)}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_5)}}
+        </mj-text>
+
+        <mj-text mj-class="text-content">
+          {{$t(BRAND_NAME_ENDORSEMENT_SENT_BODY_6)}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="src/_layout/Body/NotForYouContactUs.mjml" />
+
+    <mj-include path="src/_layout/Body/Footer.mjml" />
+  </mj-body>
+</mjml>

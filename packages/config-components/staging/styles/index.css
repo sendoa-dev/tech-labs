@@ -1,0 +1,5 @@
+@import '@tech-labs/core-tailwindcss';
+
+@layer components {
+  @import './button.css';
+}

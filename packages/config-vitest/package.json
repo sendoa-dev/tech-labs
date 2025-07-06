@@ -1,0 +1,12 @@
+{
+  "name": "@tech-labs/config-vitest",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tech-labs/eslint-config-linter": "*",
+    "@vitest/coverage-v8": "^2.1.9",
+    "jsdom": "*",
+    "vitest": "*"
+  }
+}
