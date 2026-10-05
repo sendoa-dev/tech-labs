@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "*",
-    "@tech-labs/core-tailwindcss": "*",
     "@tech-labs/core-api": "*",
     "@tech-labs/core-composables": "*",
     "@tech-labs/core-plugin-wrappers": "*",
+    "@tech-labs/core-tailwindcss": "*",
     "@tech-labs/core-utils": "*",
     "@tech-labs/core-vue-components": "*",
     "@tech-labs/eslint-config-linter": "*",
@@ -29,7 +29,7 @@
     "vite-plugin-eslint": "*",
     "vite-svg-loader": "*",
     "vue": "*",
-    "vue-i18n": "*",
+    "vue-i18n": "^11.4.13",
     "vue-router": "*"
   }
 }
