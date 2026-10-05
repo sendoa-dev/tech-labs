@@ -17,7 +17,7 @@
     "@tech-labs/config-vitest": "*",
     "@tech-labs/core-utils": "*",
     "@capacitor/core": "^6.1.2",
-    "axios": "1.9.0",
+    "axios": "1.20.0",
     "vite": "*",
     "vitest": "*",
     "vite-plugin-eslint": "*"
